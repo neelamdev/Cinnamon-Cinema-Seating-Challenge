@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class BookingTickets{
+ int totalSeat
+ List<String> totalSeatsAvailable
+ public void allocateTickets()
+}
+class BookingTicketsThread extends Thread{
+- BookingTickets bookingTickets;
+- String userName;
+- int numberOfTicketsRequired;
+public void run()
+}
+@enduml
